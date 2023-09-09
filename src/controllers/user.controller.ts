@@ -4,7 +4,6 @@ import * as userService from "../services/user.service"
 // API Lấy thông tin tất cả user
 export const findAll = async (req: Request, res: Response) => {
     try{
-        
         // lấy dữ liệu trong service
         const [user] = await userService.findAll();
         return res.status(200).json({
@@ -15,7 +14,6 @@ export const findAll = async (req: Request, res: Response) => {
     catch(error){
         console.log(error);
     }
-
 }
 
 // API lấy thông tin 1 user theo id
@@ -34,7 +32,6 @@ export const findOne = async (req: Request, res: Response) => {
     catch(error){
         console.log(error);
     }
-
 }
 
 // API xóa thông tin 1 user theo id
@@ -55,7 +52,6 @@ export const remove = async (req: Request, res: Response) => {
             massage: error,
         })
     }
-
 }
 
 export const create = async (req: Request, res: Response) => {
@@ -74,5 +70,4 @@ export const create = async (req: Request, res: Response) => {
             massage: error,
         })
     }
-
 }

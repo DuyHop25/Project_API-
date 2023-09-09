@@ -21,8 +21,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 // });
 app.use("/api/v1/users", userRouter);
 
-app.listen(80, () => {
-    console.log(`http://localhost:80`);  
+app.listen(8000, () => {
+    console.log(`http://localhost:8000`);  
 });
 
 

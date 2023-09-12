@@ -1,18 +1,19 @@
 <template>
-    <div class="wallpaper">
-        <Headers/>
-            <nuxt/>
-        <Footers/>
-    </div>
+  <div class="wallpaper">
+    <Header />
+        <Nuxt />
+    <Footer/>
+  </div>
+  
 </template>
 
 <script>
-import Headers from '../components/header.vue';
-import Footers from '../components/footer.vue';
+import Header from '../Components/Header.vue'
+import Footer from '../Components/Footer.vue'
 
 export default {
   components: {
-    Headers , Footers
+    Header , Footer , 
   }
-}   
+}
 </script>

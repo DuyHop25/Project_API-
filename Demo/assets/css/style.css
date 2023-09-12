@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    background-color: #333;
+}
+.thumbnail-list{
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    object-fit: cover;
+}
+.mb{
+    margin-bottom: 30px;
+}
